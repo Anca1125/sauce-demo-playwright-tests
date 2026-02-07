@@ -1,7 +1,7 @@
 
 import { test, expect, Page } from '@playwright/test'
-import { LoginPage } from '../pages/LoginTest'
-import { validUser, invalidUser } from '../fixtures/LoginData'
+import { LoginPage } from '../pages/login.page'
+import { validUser, invalidUser } from '../fixtures/test-data-login'
 
 
 test.describe('Login Tests', () => {
