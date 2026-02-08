@@ -38,7 +38,7 @@ test.describe("Cart Page Tests", () => {
 
   test("cart page - cart items are visible", async ({ page }) => {
     await menuPage.shoppingCart.click();
-    await expect(cartPage.cartItems).toBeVisible();
+    await expect(cartPage.cartItems.first()).toBeVisible();
   });
 
   test("cart page - sum of all item prices is calculated correctlyd", async ({
